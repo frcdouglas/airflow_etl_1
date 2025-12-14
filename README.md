@@ -57,20 +57,20 @@ End
 ## Estrutura da DAG | DAG Structure
 A DAG users_etl_pipeline é composta pelas seguintes tasks:
 
-#start
+# start
 Task inicial (EmptyOperator)
-#setup_database
+# setup_database
 Cria a tabela users no banco SQLite (caso não exista) e limpa os dados antes da carga
-#extract
+# extract
 Lê os dados do arquivo users.csv
-#transform
+# transform
 Aplica transformações simples (neste projeto, apenas repassa os dados)
-#load
+# load
 Insere os registros no banco de dados SQLite
-#end
+# end
 Task final (EmptyOperator)
 
-##🧰 Tecnologias Utilizadas | Technologies Used
+## 🧰 Tecnologias Utilizadas | Technologies Used
 
 - Apache Airflow
 - Python
@@ -78,7 +78,7 @@ Task final (EmptyOperator)
 - SQLite
 - Pandas
 
-##🎯 Objetivo do Projeto | Project Goal
+## 🎯 Objetivo do Projeto | Project Goal
 
 - Demonstrar o uso do Apache Airflow para orquestração de pipelines
 - Aplicar conceitos de ETL na prática
